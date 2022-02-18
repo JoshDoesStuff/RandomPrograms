@@ -11,10 +11,17 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    public float speed = 5.0f;
+    private float speed = 20.0f;
+    private float turnSpeed = 45.0f;
+    private float horizontalInput;
+    private float verticalInput;
     void Update()
     {
-        //Move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-    }
+        
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+        //Moves car based on Up and Down inputs
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        //Moves car based on Left and Right inputs
+        transform.Rotate(Vector3.up, turnSpeed* horizontalInput * Time.deltaTime);
 }
