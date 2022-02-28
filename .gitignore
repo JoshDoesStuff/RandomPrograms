@@ -1,7 +1,8 @@
 
-Unity Junior Programmer/Prototype 1/Temp/
-Unity Junior Programmer/Prototype 1/Library/PackageCache/
+Unity Junior Programmer/Prototype 1/Temp/*
+Unity Junior Programmer/Prototype 1/Library/PackageCache/*
 Unity Junior Programmer/Challenge 1/.vs/Challenge 1/v17/.suo
 *.log
 Unity Junior Programmer/Challenge 1/Temp/
-Unity Junior Programmer Challenge 1/Library/PackageCache/
+Unity Junior Programmer Challenge 1/Library/PackageCache/*
+
